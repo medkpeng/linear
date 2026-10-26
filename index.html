@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>最后防线 · 打僵尸</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><div class="brand"><span class="mark">✦</span><div><small>OUTPOST / 07</small><h1>最后防线</h1></div></div><div class="signal"><i></i> 生存训练 / HTML DEMO</div></header>
+<section class="dashboard" aria-label="战斗状态"><div><small>生命值</small><strong id="health">100 <em>/ 100</em></strong><div class="meter"><i id="bar"></i></div></div><div><small>当前波次</small><strong id="wave">01</strong></div><div><small>击杀数量</small><strong id="kills">00</strong></div><div><small>最高纪录</small><strong id="best">00</strong></div><button id="pause" disabled>暂停 <kbd>P</kbd></button></section>
+<section class="arena"><canvas id="game" width="1120" height="640" tabindex="0" aria-label="打僵尸游戏区域，WASD 或方向键移动，鼠标瞄准，按住鼠标或空格射击"></canvas><div class="arena-label"><i></i> 隔离区 07 <span>保持移动，守住最后防线</span></div><div id="overlay" class="overlay"><div class="panel"><small id="eyebrow">SURVIVAL PROTOCOL</small><h2 id="title">黎明之前，<br>活下去。</h2><p id="message">僵尸正在逼近。保持移动，瞄准它们，<br>看看你能撑过多少波。</p><button id="start">进入隔离区 <span>↗</span></button><p class="hint">WASD 移动 · 鼠标瞄准 · 按住射击</p></div></div><div id="announcement" aria-live="polite"></div></section>
+<footer><div><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> / 方向键 <span>移动</span></div><div>◎ <span>鼠标瞄准</span></div><div><kbd>SPACE</kbd> / 鼠标左键 <span>射击</span></div><div><kbd>P</kbd> <span>暂停</span></div><button id="restart">重新开始 ↻</button></footer><p class="note">每波结束恢复 15 点生命 · 无限弹药 · 桌面键鼠体验</p>
+</main><script src="engine.js"></script><script src="game.js"></script></body></html>
